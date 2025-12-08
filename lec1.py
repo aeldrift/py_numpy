@@ -27,3 +27,12 @@ for i in range(1,5):
 print(np.array(l))
 print("dimension of myarr is:",myarr.ndim)
 print("dimension of myarr2 is:",myarr2.ndim)
+
+#creating a N-Dimensional array
+n_arr=np.array([10,11,12,1,14],ndmin=5)
+print(n_arr)
+print("dimension of n_arr is:",n_arr.ndim)
+
+# creatinga zero array:
+arr_zero = np.zeros(4)
+print("Zero array:",arr_zero)
