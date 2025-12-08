@@ -36,3 +36,14 @@ print("dimension of n_arr is:",n_arr.ndim)
 # creatinga zero array:
 arr_zero = np.zeros(4)
 print("Zero array:",arr_zero)
+
+arr_zero1 = np.zeros((3,4)) #2-D array
+print("Zero1 array:\n",arr_zero1)
+
+# creating a one array:
+arr_one=np.ones (4)
+print("Ones array:",arr_one)
+
+# creating ann empty array:
+arr_empty=np.empty(4)
+print("Empty array:",arr_empty)
