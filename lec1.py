@@ -10,3 +10,12 @@ print('myarr2 is:',myarr2)
 print(myarr2[0,1]) # accessing 2-D array element
 myarr2[0,1]=9 # modifying 2-D array element
 print(myarr2) #updated array value
+
+import timeit
+
+size = 1000000
+list_time = timeit.timeit('[j**4 for j in range(1,9)]', number=10)
+print(f"Python list comprehension: {list_time:.6f} seconds")    
+
+numpy_time = timeit.timeit('np.arange(1,9)**4', globals=globals(), number=10)
+print(f"NumPy vectorized: {numpy_time:.6f} seconds")
