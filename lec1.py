@@ -47,3 +47,16 @@ print("Ones array:",arr_one)
 # creating ann empty array:
 arr_empty=np.empty(4)
 print("Empty array:",arr_empty)
+
+# creating a range array:
+arr_range=np.arange(10)
+print("Range array:",arr_range)
+arr_range1=np.arange(1,10,3) #start,stop,step
+print("Range1 array:",arr_range1)
+
+#creating a diagonal array:
+arr_diag=np.eye(3)
+print("Diagonal array:\n",arr_diag)
+
+arr_diag1=np.eye(3,5)
+print("Diagonal array1:\n",arr_diag1)
