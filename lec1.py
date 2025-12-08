@@ -19,3 +19,11 @@ print(f"Python list comprehension: {list_time:.6f} seconds")
 
 numpy_time = timeit.timeit('np.arange(1,9)**4', globals=globals(), number=10)
 print(f"NumPy vectorized: {numpy_time:.6f} seconds")
+
+l=[]
+for i in range(1,5):
+    int_1=int(input("enter value:", ))
+    l.append(int_1)
+print(np.array(l))
+print("dimension of myarr is:",myarr.ndim)
+print("dimension of myarr2 is:",myarr2.ndim)
