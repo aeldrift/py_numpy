@@ -60,3 +60,7 @@ print("Diagonal array:\n",arr_diag)
 
 arr_diag1=np.eye(3,5)
 print("Diagonal array1:\n",arr_diag1)
+
+# creating a linspace array:
+arr_linspace=np.linspace(0,20,num=5) #start,stop,num of elements
+print("Linspace array:",arr_linspace)
