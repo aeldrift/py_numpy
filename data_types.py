@@ -11,3 +11,7 @@ print("Data Type: " ,var2.dtype)
 
 var3 = np.array(["A","b","D","e",3,4,9,6])
 print("Data Type: " ,var3.dtype)
+
+# To change dtype of an array:
+x=np.array([1,2,3,4],dtype=np.int8)
+print(x.dtype)
