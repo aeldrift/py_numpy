@@ -71,3 +71,13 @@ print("Random array:",var)
 
 var=np.random.rand(2,5)
 print("Random 2-D array:",var)
+
+# randn() function:  nos. close to 0, +ve or -ve
+var1 = np.random.randn(4)
+print("Random array:",var1)
+
+# ranf() function:  nos. btw 0 and 1 but 1 is excluded
+var2 = np.random.ranf(4)
+print("Random array:",var2)
+var2 = np.random.ranf((2,3))
+print("Random 2-D array:",var2)
