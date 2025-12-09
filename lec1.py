@@ -64,3 +64,10 @@ print("Diagonal array1:\n",arr_diag1)
 # creating a linspace array:
 arr_linspace=np.linspace(0,20,num=5) #start,stop,num of elements
 print("Linspace array:",arr_linspace)
+
+# rand() function:  nos. btw 0 and 1
+var=np.random.rand(4)
+print("Random array:",var)
+
+var=np.random.rand(2,5)
+print("Random 2-D array:",var)
