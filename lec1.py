@@ -81,3 +81,15 @@ var2 = np.random.ranf(4)
 print("Random array:",var2)
 var2 = np.random.ranf((2,3))
 print("Random 2-D array:",var2)
+
+# randint() function:  nos. btw a given range
+var3 = np.random.randint(1,10,4) #min,max,total_values (or size)
+print("Random array:",var3)
+
+var3 = np.random.randint(1,10,(2,2)) 
+print("Random 2-D array:",var3)
+
+# seed() function: to generate same random nos. again and again
+np.random.seed(10)
+var4 = np.random.rand(4)
+print("Random array with seed 10:",var4)
