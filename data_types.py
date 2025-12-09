@@ -4,3 +4,10 @@ print("Data Type: " ,var.dtype)
 
 var1 = np.array([1.0,2,3,4])
 print("Data Type: " ,var1.dtype)
+
+
+var2 = np.array(["A","b","D","e"])
+print("Data Type: " ,var2.dtype)
+
+var3 = np.array(["A","b","D","e",3,4,9,6])
+print("Data Type: " ,var3.dtype)
