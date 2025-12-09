@@ -90,6 +90,6 @@ var3 = np.random.randint(1,10,(2,2))
 print("Random 2-D array:",var3)
 
 # seed() function: to generate same random nos. again and again
-np.random.seed(10)
+np.random.seed(10)  # seed “freezes” NumPy’s random generator to a known starting point.
 var4 = np.random.rand(4)
 print("Random array with seed 10:",var4)
