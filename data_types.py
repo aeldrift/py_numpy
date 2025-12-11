@@ -31,3 +31,14 @@ print(new.dtype)
    
    # OR
 
+x3=np.array([1,2,3,4])
+new=np.float32(x3)
+print("Data Type: ",x3.dtype)
+print(x3)
+print("new array is",new)
+print(new.dtype)
+
+# converting again 
+new1=np.int_(new)
+print(new1)
+print("Data Type: ",new1.dtype)
