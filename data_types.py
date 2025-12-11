@@ -24,7 +24,7 @@ x2=np.array([1,2,3,4],dtype = "f")
 print(x2.dtype)
 
 # converting as a functon
-x3 = np.array([1,2,3,4])
+x3 = np.array([1,2,3,4]) # To convert directly
 
 new= x3.astype(np.float64)
 print(new.dtype)   
@@ -42,3 +42,4 @@ print(new.dtype)
 new1=np.int_(new)
 print(new1)
 print("Data Type: ",new1.dtype)
+
