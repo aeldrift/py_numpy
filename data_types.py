@@ -20,5 +20,14 @@ print(x.dtype)
 x1=np.array([1,2,3,4],dtype=np.int8)
 print(x1.dtype)
 
-y=np.array([1,2,3,4],dtype = "f")
-print(y.dtype)
+x2=np.array([1,2,3,4],dtype = "f")
+print(x2.dtype)
+
+# converting as a functon
+x3 = np.array([1,2,3,4])
+
+new= x3.astype(np.float64)
+print(new.dtype)   
+   
+   # OR
+
