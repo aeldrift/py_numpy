@@ -43,3 +43,31 @@ new1=np.int_(new)
 print(new1)
 print("Data Type: ",new1.dtype)
 
+# Arithmetic Operations on arrays using numpy
+a = np.array([2,3,4,5])
+b = np.array([1,2,3,4])
+c = a+b
+c1 = a-b
+c2 = a*b
+c3 = a/b
+print(c)
+print(c1)
+print(c2)
+print(c3)
+
+# on performing arithmetic operations on lists
+a=[1,2,3,4]
+b=[5,6,7,8]
+c=a+b   # will concatenate the lists
+print("concatenate gives",c)
+
+# to add two lists element wise 
+c = []
+for i in range(len(a)):
+    c.append(a[i] + b[i])
+
+print("addition gives", c)
+
+# Using zip() and list comprehension
+c = [x + y for x, y in zip(a, b)]
+print("Using zip addition gives c as:", c)

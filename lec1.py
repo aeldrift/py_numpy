@@ -93,4 +93,6 @@ print("Random 2-D array:",var3)
 np.random.seed(10)  # seed “freezes” NumPy’s random generator to a known starting point.
 var4 = np.random.rand(4)
 print("Random array with seed 10:",var4)
-
+# accessing array elements:
+a=np.array([[1,2,3,4,5,6,7],[8,9,10,11,12,13,14]])
+print(a[:, 3])
