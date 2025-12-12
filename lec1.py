@@ -98,3 +98,7 @@ print("Random array with seed 10:",var4)
 a=np.array([[1,2,3,4,5,6,7],[8,9,10,11,12,13,14]])
 print(a[1,5])
 print(a[:, 3])
+
+# full function: create an array and fill it with a specified value
+arr = np.full((3,4),7)
+print("Full array:\n",arr)
