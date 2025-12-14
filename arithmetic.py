@@ -56,3 +56,43 @@ print("After dividing two 2-D arrays element-wise:\n",arr_div)
 
 arr_mod = arr % arr1
 print("After taking modulo of two 2-D arrays element-wise:\n",arr_mod)
+
+# Arithmetic Functions:
+a = np.array([1,2,3,4,0,7,5])
+
+print("Original array:",a)
+print("min value is:", np.min(a),"argmin is:", np.argmin(a))
+
+print("max valule is:", np.max(a),"argmax is:", np.argmax(a))
+
+print("sum is:", np.sum(a))
+
+print("mean is:", np.mean(a))
+
+a1 = np.array([[9,9,3],[2,4,6]])
+print("min is:",np.min(a1, axis=1)) # row-wise min
+
+print("min is:",np.min(a1, axis=0)) # column-wise min
+
+print("sqrt is:",np.sqrt(a1))
+
+# to find square root of each element of an array
+a = np.array([1,2,0])
+print("sqrt of a  is:\n",np.sqrt(a))
+
+print("sqrt of a1 is:\n",np.sqrt(a1))
+
+# to find trignometric values of each element of an array 
+
+print("sin of a is:",np.sin(a)) # sin funcn
+print("cos of a1 is:\n",np.cos(a1)) # cos funcn
+print("tan of a is:",np.tan(a)) # tan funcn
+
+''' # for funcns like: 
+cosec funcn =1/np.sin(a1)
+ # sec funcn =1/np.cos(a1)
+ # cot funcn= 1/np.tan(a1) '''
+
+# cumsum: cumulative sum of elements
+array = np.array([1,2,3,4])
+print("cumsum of array is:",np.cumsum(array))
