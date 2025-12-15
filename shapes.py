@@ -35,3 +35,4 @@ d = np.array([1,2,3,4],ndmin=4)
 print("the array d is", d)
 print("dimension of d is:",d.ndim)
 print("4-D array shape is:", d.shape) #(1,1,1,4)
+
