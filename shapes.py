@@ -36,8 +36,6 @@ print("the array d is", d)
 print("dimension of d is:",d.ndim)
 print("4-D array shape is:", d.shape) #(1,1,1,4)
 
-# reshaping an array
-array =np.array([1,2,3,4])
-print("Original array:", array.shape)
-new_array = array.reshape(2,2)
-print("Reshaped array:", new_array)
+one = d.reshape(-1)
+print("reshaped array is:", one)
+print("reshaped array shape is:", one.shape) #(4,)
