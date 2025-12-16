@@ -1,16 +1,14 @@
+import numpy as np
 
-# var1 = np.array([10,20,30,40])
-# var_add1 = var + var1
-# print("After adding two arrays element-wise:",var_add1)
+var1 = np.array([1,2,3,4])
 
+var2 = np.array([1,2,3,5])
 
-# # OR
-# var_add1 = np.add(var, var1)
-# print("After adding two arrays element-wise using add():",var_add1)
+print("var1 + var2 is:\n", var1 + var2)
 
-# var_add1= np.add(var,3)
-# print("After adding two arrays element-wise using add():",var_add1)
+var3 = np.array([1,2])
 
-# # FOr 2-D array:
-# var_2d = np.array([[1,2,3],[4,5,6]])
-# var_add
+var4 = np.array([[1],[3]])
+print("var1 is:\n", var3)
+print("var2 is:\n", var4)
+print("var3 + var4 is:\n", var3 + var4)
