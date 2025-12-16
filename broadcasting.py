@@ -24,3 +24,13 @@ print("result a+b is:\n", a + b)
 d = np.array([1,2,3])    
 
 print("result c +d  is:\n", c + d)''' 
+
+c = np.array([1, 2, 3])      # shape (3,)
+d = np.array([[2], [1]])     # shape (2,1)
+
+print("c > d is:\n",c > d)
+
+print("c < d is:\n",c < d)
+
+print("c == d is:\n",c == d)
+
