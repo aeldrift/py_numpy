@@ -64,14 +64,14 @@ print(arr)
 arr = np.array([[1,2,3],[4,5,6]])
 for i in np.nditer(arr, order='C'):
     arr[:] += 10
-    print(i)
+    print(i) # 11 12 13 14 15 16
 
 print()
 # or
 arr = np.array([[1,2,3],[4,5,6]])
 for i in np.nditer(arr, op_flags=['readwrite']):
     arr[:] += 10
-    print(i)
+    print(i) #11 22 33 44 55 66
 
 print()
 
