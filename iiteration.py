@@ -60,24 +60,14 @@ for i in np.nditer(arr, op_flags=['readwrite']):
 
 print(arr)
 
-
-# or
-arr = np.array([1, 2, 3])
-
-for i in np.nditer(arr, op_flags=['readwrite']):
-    arr[:] *= 10  # as 3 elements are there, so loop'll run 3 times
-
-print(arr)
-
-
-Row- major order (C order):
+# Row- major order (C order):
 arr = np.array([[1,2,3],[4,5,6]])
 for i in np.nditer(arr, order='C'):
     arr[:] += 10
     print(i)
 
 print()
-
+# or
 arr = np.array([[1,2,3],[4,5,6]])
 for i in np.nditer(arr, op_flags=['readwrite']):
     arr[:] += 10
@@ -98,7 +88,7 @@ for i in np.nditer(arr, op_flags=['readwrite']):
 for i in np.nditer(arr, order='F'):
     arr[:] += 10
     print(i)
-    
+
 ''' 
 # arr.flatten(order='C'/'F') → flatten array in memory order
 
