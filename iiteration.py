@@ -59,3 +59,52 @@ for i in np.nditer(arr, op_flags=['readwrite']):
     i[...] *= 10  # as 3 elements are there, so loop'll run 3 times
 
 print(arr)
+
+
+# or
+arr = np.array([1, 2, 3])
+
+for i in np.nditer(arr, op_flags=['readwrite']):
+    arr[:] *= 10  # as 3 elements are there, so loop'll run 3 times
+
+print(arr)
+
+
+Row- major order (C order):
+arr = np.array([[1,2,3],[4,5,6]])
+for i in np.nditer(arr, order='C'):
+    arr[:] += 10
+    print(i)
+
+print()
+
+arr = np.array([[1,2,3],[4,5,6]])
+for i in np.nditer(arr, op_flags=['readwrite']):
+    arr[:] += 10
+    print(i)
+
+print()
+
+arr = np.array([[1,2,3],[4,5,6]])
+for i in np.nditer(arr, op_flags=['readwrite']):
+    i[...] += 10
+    print(i)
+
+''' or use( returns 1-D copy of an array):
+  for every_element in arr.flatten():
+         modify(element)'''
+
+# Fortran order (F order):
+for i in np.nditer(arr, order='F'):
+    arr[:] += 10
+    print(i)
+
+
+
+# ''' 
+# arr.flatten(order='C'/'F') → flatten array in memory order
+
+# np.copy(arr, order='C'/'F') → copy array with specified memory layout
+
+# reshape(-1, order='C'/'F') → reshape using C or F order '''
+
