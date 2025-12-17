@@ -98,10 +98,8 @@ for i in np.nditer(arr, op_flags=['readwrite']):
 for i in np.nditer(arr, order='F'):
     arr[:] += 10
     print(i)
-
-
-
-# ''' 
+    
+''' 
 # arr.flatten(order='C'/'F') → flatten array in memory order
 
 # np.copy(arr, order='C'/'F') → copy array with specified memory layout
